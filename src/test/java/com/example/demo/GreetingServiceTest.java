@@ -1,4 +1,4 @@
-﻿package com.example.demo;
+package com.example.demo;
 import com.example.demo.service.GreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
