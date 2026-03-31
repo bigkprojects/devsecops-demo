@@ -14,8 +14,8 @@
         },
         "StringLike": {
           "token.actions.githubusercontent.com:sub": [
-            "repo:YOUR_GITHUB_ORG/devsecops-demo:ref:refs/heads/main",
-            "repo:YOUR_GITHUB_ORG/devsecops-demo:ref:refs/heads/develop"
+            "repo:bigkprojects/devsecops-demo:ref:refs/heads/main",
+            "repo:bigkprojects/devsecops-demo:ref:refs/heads/develop"
           ]
         }
       }
