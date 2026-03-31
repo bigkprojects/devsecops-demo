@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: devsecops-demo
-          image: 831926603642.dkr.ecr.us-east-1.amazonaws.com/devsecops-demo:latest
+          image: 831926603642.dkr.ecr.us-east-1.amazonaws.com/devsecops-demo:bd52e8532cd4c612056daf350f31223002616c9c
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
