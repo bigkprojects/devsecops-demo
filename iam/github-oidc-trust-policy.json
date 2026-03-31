@@ -1,0 +1,24 @@
+﻿{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "GitHubActionsOIDCFederation",
+      "Effect": "Allow",
+      "Principal": {
+        "Federated": "arn:aws:iam::831926603642:oidc-provider/token.actions.githubusercontent.com"
+      },
+      "Action": "sts:AssumeRoleWithWebIdentity",
+      "Condition": {
+        "StringEquals": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+        },
+        "StringLike": {
+          "token.actions.githubusercontent.com:sub": [
+            "repo:YOUR_GITHUB_ORG/devsecops-demo:ref:refs/heads/main",
+            "repo:YOUR_GITHUB_ORG/devsecops-demo:ref:refs/heads/develop"
+          ]
+        }
+      }
+    }
+  ]
+}
